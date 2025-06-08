@@ -11,7 +11,7 @@ model.load_ckpt("retrieval/630k-audioset-best.pt")
 
 # 音声ファイルとテキストクエリ
 text_prompts = ["a dog barking", "a baby crying", "a car passing"]
-audio_files = ["dog_bark.wav"]
+audio_files = ["retrieval/dog_bark.wav"]
 
 # 埋め込み取得（NumPyで返ってくる → torch.Tensorに変換）
 text_embed_np = model.get_text_embedding(text_prompts)
